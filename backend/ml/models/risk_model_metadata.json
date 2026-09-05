@@ -1,0 +1,83 @@
+{
+  "model_name": "Logistic Regression",
+  "target": "is_fraud",
+  "features": [
+    "account_age_days",
+    "avg_monthly_spend",
+    "merchant_risk_score",
+    "transaction_amount",
+    "ip_risk_score",
+    "txn_count_1h",
+    "txn_count_24h",
+    "failed_txn_count_24h",
+    "geo_distance_from_last_txn",
+    "amount_deviation_from_user_mean",
+    "is_international",
+    "credit_score_band",
+    "kyc_level",
+    "payment_channel",
+    "device_type"
+  ],
+  "numeric_features": [
+    "account_age_days",
+    "avg_monthly_spend",
+    "merchant_risk_score",
+    "transaction_amount",
+    "ip_risk_score",
+    "txn_count_1h",
+    "txn_count_24h",
+    "failed_txn_count_24h",
+    "geo_distance_from_last_txn",
+    "amount_deviation_from_user_mean",
+    "is_international"
+  ],
+  "categorical_features": [
+    "credit_score_band",
+    "kyc_level",
+    "payment_channel",
+    "device_type"
+  ],
+  "excluded_features": [
+    "transaction_id",
+    "customer_id",
+    "merchant_id",
+    "post_auth_risk_score"
+  ],
+  "split": {
+    "train": 0.7,
+    "validation": 0.15,
+    "test": 0.15,
+    "method": "chronological"
+  },
+  "validation_metrics": {
+    "accuracy": 0.795610547126641,
+    "precision": 0.06860404774260509,
+    "recall": 0.7443693693693694,
+    "f1": 0.1256295733155944,
+    "roc_auc": 0.8288714199708104,
+    "pr_auc": 0.31111535161682424,
+    "brier_score": 0.15300231950786444
+  },
+  "test_metrics": {
+    "accuracy": 0.7958771130906103,
+    "precision": 0.06705418310151547,
+    "recall": 0.7626918536009445,
+    "f1": 0.12327068027859937,
+    "roc_auc": 0.843944227505674,
+    "pr_auc": 0.3273649824660147,
+    "brier_score": 0.15352453345221975
+  },
+  "calibrated_test_metrics": {
+    "accuracy": 0.9823177910567119,
+    "precision": 0.8,
+    "recall": 0.08028335301062574,
+    "f1": 0.1459227467811159,
+    "roc_auc": 0.843944227505674,
+    "pr_auc": 0.3273649824660147,
+    "brier_score": 0.015184739240384779
+  },
+  "fraud_rate": 0.01623055315831037,
+  "rows": 300113,
+  "calibration": "sigmoid",
+  "random_state": 42
+}

@@ -1,0 +1,40 @@
+# Python
+.env
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# RecoverZ runtime
+backend/data/*.db
+backend/data/*.db-journal
+backend/data/models/*.joblib
+backend/data/models/*.json
+backend/data/raw/*.csv
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+# ML datasets
+backend/ml/data/
+
+# Trained model artifacts
+backend/ml/models/*.joblib
+
+# Local database
+backend/recoverz.db
+
+# Local backup files
+*.backup
+
+.env
