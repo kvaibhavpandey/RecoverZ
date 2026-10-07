@@ -1,4 +1,4 @@
-RecoverZ — AI Revenue Recovery Agent
+(RecoverZ — AI Revenue Recovery Agent)
 
 Recover failed payments into verified revenue — with AI for decisions, deterministic policy for safety, and Razorpay for execution.
 
